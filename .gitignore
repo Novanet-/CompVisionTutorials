@@ -1,0 +1,8 @@
+.class
+/.idea
+OpenIMAJ-Tutorial02/.idea/
+test2/.idea/
+OpenIMAJ-Tutorial01/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_solaris_amd64_2_0_rc11.xml
+OpenIMAJ-Tutorial01/.idea/
+*.jar
+*.class
