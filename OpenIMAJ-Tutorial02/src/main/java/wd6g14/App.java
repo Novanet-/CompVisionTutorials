@@ -66,8 +66,11 @@ public class App {
 	    image.drawShapeFilled(new Ellipse(650f, 425f, 25f, 12f, 0f), RGBColour.WHITE);
 	    image.drawShapeFilled(new Ellipse(600f, 380f, 30f, 15f, 0f), RGBColour.WHITE);
 	    image.drawShapeFilled(new Ellipse(500f, 300f, 100f, 70f, 0f), RGBColour.WHITE);
+	    image.drawShape(new Ellipse(500f, 300f, 100f, 70f, 0f), 5, RGBColour.RED);
 	    image.drawText("OpenIMAJ is", 425, 300, HersheyFont.ASTROLOGY, 20, RGBColour.BLACK);
 	    image.drawText("Awesome", 425, 330, HersheyFont.ASTROLOGY, 20, RGBColour.BLACK);
+
+		image.processInplace(new FGaussianConvolve(0.5f));
 	    DisplayUtilities.displayName(image, IMAGE_PROCESSING_WINDOW);
     }
 }
